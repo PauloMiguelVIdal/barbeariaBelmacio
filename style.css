@@ -493,7 +493,7 @@ align-items: center;
     text-align: center;
     border-radius: 40px;
     box-shadow: 3px 19px 25px 17px rgba(0,0,0,0.89);
-    margin-bottom:30px ;
+    margin-bottom:10px ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -555,3 +555,50 @@ align-items: center;
     width: 150px;
     height: 150px;
 }
+
+/* teste container grid */
+.containerGrid{
+    display: grid;
+    grid-template-columns: 6;
+    grid-template-rows: 2;
+    width: 80%;
+    height: 60%;
+    background-color: #894E0C;
+    border-radius: 40px;
+    gap: 20px;
+    text-align: center;
+}
+.containerTeste{
+    background-color: white;
+    border-radius: 40px;
+
+}
+
+.containerGrid1{
+grid-column: 1;
+grid-row: 1/2;
+}
+.containerGrid2{
+grid-column: 2;
+grid-row: 1/2;
+
+}
+.containerGrid3{
+    grid-column: 3;
+    grid-row: 1/2;
+}
+
+/* testes2 */
+/* .containerGrid1{
+    grid-column: 1/5;
+    grid-row: 1/3;
+    }
+    .containerGrid2{
+    grid-column: 5;
+    grid-row: 1;
+    
+    }
+    .containerGrid3{
+        grid-column: 5;
+        grid-row: 2;
+    } */
