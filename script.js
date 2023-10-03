@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cabelo.classList.remove("containerGridPrincipal")
         
         barba.classList.remove("containerGridSec2")
-        cabeloB.classList.remove("containerGriPrincipal")
+        cabeloB.classList.remove("containerGridPrincipal")
         cabelo.classList.remove("containerGridSec1")
 
 
