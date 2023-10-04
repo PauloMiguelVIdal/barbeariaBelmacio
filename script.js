@@ -20,7 +20,37 @@ alert("o display já é o sec 2")
 }else{
   alert("o display já é o principal")
 }
-    })
+})
+    barba.addEventListener("click",()=>{
+if(barba.classList.contains("containerGridSec1")){
+assinaturaCabelo.style.display="none" 
+assinaturaBarba.style.display="flex" 
+assinaturaCabeloBarba.style.display="none" 
+alert("o display já é o sec 2")
+}else if(barba.classList.contains("containerGridSec2")){
+  assinaturaCabelo.style.display="none" 
+  assinaturaBarba.style.display="flex" 
+  assinaturaCabeloBarba.style.display="none" 
+  alert("o display já é o sec1")
+}else{
+  alert("o display já é o principal")
+}
+})
+    cabeloB.addEventListener("click",()=>{
+if(cabeloB.classList.contains("containerGridSec1")){
+assinaturaCabelo.style.display="none" 
+assinaturaBarba.style.display="none" 
+assinaturaCabeloBarba.style.display="flex" 
+alert("o display já é o sec 2")
+}else if(cabeloB.classList.contains("containerGridSec2")){
+  assinaturaCabelo.style.display="none" 
+  assinaturaBarba.style.display="none" 
+  assinaturaCabeloBarba.style.display="flex" 
+  alert("o display já é o sec1")
+}else{
+  alert("o display já é o principal")
+}
+})
 
 
 
@@ -236,28 +266,28 @@ alert("o display já é o sec 2")
 
 
 
-//inicio
-  // esses ficam off no inicio
-  preço 
-  pMes
-  containerPrincDir
+// //inicio
+//   // esses ficam off no inicio
+//   preço 
+//   pMes
+//   containerPrincDir
 
 
 
-  //container principal fica off
-  botaoMaisInfo
+//   //container principal fica off
+//   botaoMaisInfo
 
-  //container principal fica on
-  preço
-pMes
-containerPrincDir
+//   //container principal fica on
+//   preço
+// pMes
+// containerPrincDir
 
-  // fica off fica sec1 e sec2
-  titulo
-  preço
-  pMes
-  assinarAgora
-  botaoMaisInfo
-  containerPrincDir
-});
+//   // fica off fica sec1 e sec2
+//   titulo
+//   preço
+//   pMes
+//   assinarAgora
+//   botaoMaisInfo
+//   containerPrincDir
+ });
 
