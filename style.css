@@ -4,18 +4,18 @@ body{
     height: 100%;
     background:linear-gradient(to bottom, #070C26, #0A0E34)
 }
-a {
+a{
     text-decoration: none;
     transition: 0.4s;
     color: #070C26;
 }
 
 a:visited {
-    color: #070C26;
+    color: white;
 }
 
-a:hover{
-    color: #0A0E34;
+a:hover {
+    color: white;
 }
 
 header{
@@ -217,15 +217,25 @@ font-family: garet;
     color: #0A0E34;
     font-size: 20px;
 }
-.itemNav2 {
+
+.itemNavAgendar{
     list-style: none;
-    color:#F28705;
     font-size: 20px;
-    background-color: white;
-    border: 2px solid #F28705;
+    background:linear-gradient(to right, #0b103d,#0A0E34 ) ;    
     border-radius: 30px;
     padding: 20px;
 }
+.itemNavAgendar:hover{
+    list-style: none;
+    font-size: 20px;
+   background:linear-gradient(to right, #0A0E34,#070C26) ;
+    border-radius: 30px;
+    padding: 25px 40px 25px 40px ;
+    border:  none;
+    transition: 0.4s;
+}
+
+
 
 .itemNav:hover {
     text-decoration: underline;

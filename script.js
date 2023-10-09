@@ -51,6 +51,7 @@ assinaturaCabeloBarba.style.display="flex"
   // alert("o display já é o principal")
 }
 })
+//fazer testes para verificar
 
 
 
