@@ -51,6 +51,33 @@ assinaturaCabeloBarba.style.display="flex"
   // alert("o display já é o principal")
 }
 })
+
+const marcaNatura = document.getElementById("marcaNatura")
+const marcaGrandha = document.getElementById("marcaGrandha")
+const marcaMary = document.getElementById("marcaMary")
+const descNatura = document.getElementById("descNatura")
+const descGrandha = document.getElementById("descGrandha")
+const descMary = document.getElementById("descMary")
+marcaNatura.addEventListener("mouseover",()=>{
+descNatura.style.display="flex"
+})
+marcaNatura.addEventListener("mouseleave",()=>{
+  descNatura.style.display="none"
+})
+marcaGrandha.addEventListener("mouseover",()=>{
+descGrandha.style.display="flex"
+})
+marcaGrandha.addEventListener("mouseleave",()=>{
+  descGrandha.style.display="none"
+})
+marcaMary.addEventListener("mouseover",()=>{
+descMary.style.display="flex"
+})
+marcaMary.addEventListener("mouseleave",()=>{
+  descMary.style.display="none"
+})
+
+
 //fazer testes para verificar
 
 
