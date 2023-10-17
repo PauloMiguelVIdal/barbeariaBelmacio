@@ -22,30 +22,28 @@ if(cabeloAssinaturaBarba.classList.contains("containerGridSec1")){
 assinaturaCabelo.style.display="flex" 
 assinaturaBarba.style.display="none" 
 assinaturaCabeloBarba.style.display="none" 
-alert("o display já é o sec 2")
+
 }else if(cabeloAssinaturaBarba.classList.contains("containerGridSec2")){
   assinaturaCabelo.style.display="flex" 
   assinaturaBarba.style.display="none" 
   assinaturaCabeloBarba.style.display="none" 
-  alert("o display já é o sec1")
+  
 }else{
-  alert("o display já é o principal")
+ 
 }
 })
 
 cabeloAssinaturaCabeloBarba.addEventListener("click",()=>{
-if(cabeloBAssinaturaCabeloBarba.classList.contains("containerGridSec1")){
-assinaturaCabelo.style.display="none" 
+if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec1")){
+assinaturaCabelo.style.display="flex" 
 assinaturaBarba.style.display="none" 
-assinaturaCabeloBarba.style.display="flex" 
-alert("o display já é o sec 2")
-}else if(cabeloBAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
-  assinaturaCabelo.style.display="none" 
+assinaturaCabeloBarba.style.display="none" 
+}else if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
+  assinaturaCabelo.style.display="flex" 
   assinaturaBarba.style.display="none" 
-  assinaturaCabeloBarba.style.display="flex" 
-  alert("o display já é o sec1")
+  assinaturaCabeloBarba.style.display="none" 
 }else{
-  alert("o display já é o principal")
+
 }
 })
 //
@@ -57,14 +55,14 @@ barbaAssinaturaCabelo.addEventListener("click",()=>{
   assinaturaCabelo.style.display="none" 
   assinaturaBarba.style.display="flex" 
   assinaturaCabeloBarba.style.display="none" 
-  alert("o display já é o sec 2")
+
   }else if(barbaAssinaturaCabelo.classList.contains("containerGridSec2")){
     assinaturaCabelo.style.display="none" 
     assinaturaBarba.style.display="flex" 
     assinaturaCabeloBarba.style.display="none" 
-    alert("o display já é o sec1")
+
   }else{
-    alert("o display já é o principal")
+
   }
   })
   
@@ -73,14 +71,14 @@ barbaAssinaturaCabelo.addEventListener("click",()=>{
   assinaturaCabelo.style.display="none" 
   assinaturaBarba.style.display="flex" 
   assinaturaCabeloBarba.style.display="none" 
-  alert("o display já é o sec 2")
+  
   }else if(barbaAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
     assinaturaCabelo.style.display="none" 
     assinaturaBarba.style.display="flex" 
     assinaturaCabeloBarba.style.display="none" 
-    alert("o display já é o sec1")
+
   }else{
-    alert("o display já é o principal")
+
   }
   })
 
@@ -92,14 +90,14 @@ cabeloBAssinaturaCabelo.addEventListener("click",()=>{
   assinaturaCabelo.style.display="none" 
   assinaturaBarba.style.display="none" 
   assinaturaCabeloBarba.style.display="flex" 
-  alert("o display já é o sec 2")
+
   }else if(cabeloBAssinaturaCabelo.classList.contains("containerGridSec2")){
     assinaturaCabelo.style.display="none" 
     assinaturaBarba.style.display="none" 
     assinaturaCabeloBarba.style.display="flex" 
-    alert("o display já é o sec1")
+
   }else{
-    alert("o display já é o principal")
+
   }
   })
   
@@ -108,14 +106,14 @@ cabeloBAssinaturaCabelo.addEventListener("click",()=>{
   assinaturaCabelo.style.display="none" 
   assinaturaBarba.style.display="none" 
   assinaturaCabeloBarba.style.display="flex" 
-  alert("o display já é o sec 2")
+
   }else if(cabeloBAssinaturaBarba.classList.contains("containerGridSec2")){
     assinaturaCabelo.style.display="none" 
     assinaturaBarba.style.display="none" 
     assinaturaCabeloBarba.style.display="flex" 
-    alert("o display já é o sec1")
+
   }else{
-    alert("o display já é o principal")
+
   }
   })
 
