@@ -174,7 +174,7 @@ font-size: 20px;
 font-family: garet;
 }
 .fonte3{
-    color: #894E0C;
+    color: #F28705;
     font-family: garet;
 }
 .fonte4{
@@ -186,6 +186,15 @@ font-family: garet;
     color: #fff;
     display: flex;
 }
+.fonte5{
+    color: #894E0C;
+    font-family: garet;
+}
+.fonte6{
+    color: white;
+    font-family: athachantr;
+    font-size: 40px;
+}
 .logo{
     height: 70px;
     
@@ -193,7 +202,11 @@ font-family: garet;
 }
 .descriçãoContainer{
     padding: 20px;
-    /* height: 0%; */
+    margin: 0px 0px 0px 20px;
+
+    background-color: #0A0E34;
+    border-radius: 40px;
+    height: 100%;
 }
 .descriçãoClientes{
     color: #fff;
@@ -299,6 +312,7 @@ flex-direction: column;
     align-items: center;
     flex-direction: column;
 }
+
 .circulo{
     background-color: white;
     height: 100px;
@@ -310,10 +324,7 @@ flex-direction: column;
     align-items: center;
     box-shadow: 14px 3px 27px 6px rgba(137,78,12,0.69);    
 }
-.icon1{
-    width: 80px;
-    height: 80px;
-}
+
 .iconBarba{
     width: 75px;
     height: 75px;
@@ -324,6 +335,10 @@ flex-direction: column;
     height: 80px;
     padding-bottom: 15px;
 }
+.iconCabeloBarba{
+    width: 80px;
+    height: 80px;
+}
 .tituloContainer{
     font-size: 100px;
     color: white;
@@ -332,10 +347,11 @@ flex-direction: column;
     display: flex;
     align-items: center;
     background-color: transparent;
+    padding: 20px;
 }
 .titulo{
     font-size: 30px;
-    margin: 0px;
+    margin:10px; 
     color: #0A0E34;
 }
 
@@ -350,8 +366,21 @@ flex-direction: column;
     color: white;
     border: none;
     height: 100px;
-
-
+}
+.assinarAgora:hover{
+    width: 80%;
+    border-radius: 40px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A0E34;
+    color: #F28705;
+    border: none;
+    height: 100px;
+    box-shadow: 0px 10px 23px -3px rgb(3, 11, 99);
+    transition: 0.4s;
+    cursor: pointer;
 }
 .maisInformações{
     width: 80%;
@@ -381,7 +410,9 @@ margin-top: 10px;
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    background:linear-gradient(to bottom,#0A0E34,#070C26);
+    /* background:linear-gradient(to bottom,#0A0E34,#ffffff ); */
+    background:linear-gradient(#0a0e2e,#ffffff)
+
 }
 .titulo1 {
     text-align: center;
@@ -405,6 +436,12 @@ margin-top: 10px;
 .titulo4 {
     text-align: center;
     font-size: 30px;
+    color: white;
+    margin: 0;
+}
+.titulo5 {
+    text-align: center;
+    font-size: 40px;
     color: white;
     margin: 0;
 }
@@ -457,7 +494,7 @@ margin-top: 10px;
     border-radius: 40px;
     z-index: 1;
     align-self: center;
-    box-shadow: 3px 19px 25px 17px rgba(0,0,0,0.89);
+    box-shadow: 3px 19px 25px 17px rgba(0,0,0,0.39);
 }
 .botãoAgendarAgora{
     background-color: #F28705;
@@ -474,9 +511,9 @@ margin-top: 10px;
     border: none;
     border-radius: 40px;
     width: 80%;
-    height: 40%;
+    height: 33%;
     color: #F28705;
-    font-size: 35px;
+    font-size: 28px;
     box-shadow: 3px 7px 10px 6px rgba(224, 141, 16, 0.39);
     transition: 0.7s;
     cursor: pointer;
@@ -553,12 +590,24 @@ margin-top: 10px;
     border-radius: 60px;
     background: linear-gradient(180deg, #F28705 0%, #894E0C 100%);
 }
+.containerV:hover {
+    width: 30%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 380px;
+    border-radius: 60px;
+    background: linear-gradient(180deg, #F28705 0%, #894E0C 100%);
+    box-shadow: 0px 10px 23px -3px rgba(137,78,12,1);
+transition: 0.4s;
+}
 .cont9 {
     display: flex;
     justify-content: space-around;
     grid-row: 1;
     grid-column: 1;
-    cursor: pointer;
 }
 .containerMarcas{
     width: 80%;
@@ -687,14 +736,8 @@ height: 100%;
 /* testes2 */
 
     
-    .containerGridSec1{
-    grid-column: 5;
-    grid-row: 1;
-    }
-    .containerGridSec2{
-        grid-column: 5;
-        grid-row: 2;
-    }
+
+
 
     /* teste 3 */
     .containerGridPrincipal{
@@ -704,18 +747,44 @@ height: 100%;
         height: 100%;
         width: 100%;
         }
-        
+        .containerGridPrincipal:hover{
+            grid-column: 1/5;
+            grid-row: 1/3;
+            background:linear-gradient(to bottom, #F28705, #894E0C);
+            height: 100%;
+            width: 100%;
+            }
         .containerGridSec1{
-        grid-column: 5;
-        grid-row: 1;
-        background:linear-gradient(to bottom, #F28705, #894E0C);
-        padding: 20px;
-        }
+            grid-column: 5;
+            grid-row: 1;
+            background:linear-gradient(to bottom, #F28705, #894E0C);
+            padding: 20px;
+            cursor: pointer;
+            }
+            .containerGridSec1:hover{
+                grid-column: 5;
+                grid-row: 1;
+                background:linear-gradient(to bottom, #F28705, #894E0C);
+                padding: 20px;
+                cursor: pointer;
+                box-shadow: 0px 10px 23px -3px rgba(137,78,12,1);
+                transition: 0.4s;
+                }
         .containerGridSec2{
             grid-column: 5;
             grid-row: 2;
             background:linear-gradient(to bottom, #F28705, #894E0C);
             padding: 20px;
+            cursor: pointer;
+        }
+        .containerGridSec2:hover{
+            grid-column: 5;
+            grid-row: 2;
+            background:linear-gradient(to bottom, #F28705, #894E0C);
+            padding: 20px;
+            cursor: pointer;
+            box-shadow: 0px 10px 23px -3px rgba(137,78,12,1);
+            transition: 0.4s;
         }
         .iconeRedondo{
             background-color: #fff;
@@ -725,6 +794,8 @@ height: 100%;
             justify-content: center;
             align-items: center;
             border-radius: 100%;
+            margin: 10px;
+            box-shadow: 14px 3px 27px 6px rgba(137,78,12,0.69);
         }
         .containerPrincipal{
             display: flex;
@@ -738,21 +809,24 @@ height: 100%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            flex-direction: column;
-            /* padding: 20px; */     
+            flex-direction: column;   
+
         }
         .containerPrincDir{
-            background-color: #0A0E34;
             border-radius: 40px;
             height: 100%;
             width: 60%;
             font-size: 16px;
-            /* padding: 10px; */
-        }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+                }
+        
         .color{
             color: #fff;
         }
         .preço{
-            margin-bottom: 5px;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
             color: white;
         }
