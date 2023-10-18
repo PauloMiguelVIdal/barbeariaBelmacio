@@ -1,3 +1,18 @@
+const lastOne = document.querySelector("#clientes")
+const myObserver = new IntersectionObserver((entries)=>{
+entries.forEach((entry)=>{
+  if(entry.isIntersecting){
+    entry.target.classList.add("show")
+  } else {
+    entry.target.classList.remove("show")
+  }
+})
+})
+const elements = document.querySelectorAll(".escondido")
+
+
+elements.forEach((element)=> myObserver.observe(element))
+
 document.addEventListener("DOMContentLoaded", () => {
     const cabeloAssinaturaCabelo = document.getElementById("cabeloAssinaturaCabelo");
     const barbaAssinaturaCabelo = document.getElementById("barbaAssinaturaCabelo");
