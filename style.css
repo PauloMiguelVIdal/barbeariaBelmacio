@@ -22,11 +22,7 @@ a:hover {
     color: white;
 }
 
-header {
-    height: 20%;
-    width: 100%;
-    background: #F28705;
-}
+
 
 @font-face {
     font-family: athachantr;
@@ -43,6 +39,7 @@ header {
     src: url(./fontes/The-Youngest-Script.woff);
 }
 
+
 #botãoSubir {
     position: fixed;
     width: 50px;
@@ -55,7 +52,7 @@ header {
     border: none;
     border-radius: 12px;
     text-align: center;
-    background-color: #BF5E9D;
+    background-color: #F28705;
 }
 
 .botão {
@@ -64,6 +61,14 @@ header {
     width: 100%;
 }
 
+@media (min-width:1024px) {
+
+
+header {
+    height: 20%;
+    width: 100%;
+    background: #F28705;
+}
 /* inicio css slide */
 .tamanhoSlides {
     width: 100%;
@@ -580,6 +585,8 @@ header {
     color: #fff;
     font-size: 25px;
     box-shadow: 3px 7px 10px 6px rgba(0, 0, 0, 0.39);
+    text-align: center;
+    padding-top: 5px;
 }
 
 .botãoAgendarAgora:hover {
@@ -593,6 +600,8 @@ header {
     box-shadow: 3px 7px 10px 6px rgba(224, 141, 16, 0.39);
     transition: 0.7s;
     cursor: pointer;
+    text-align: center;
+    padding-top: 7px;
 }
 
 .container1 {
@@ -976,20 +985,6 @@ header {
     transition-delay: 700ms;
 }
 
-/* .container1 :nth-child(2){
-    transition-delay: 300ms;
-}
-
-.container1 :nth-child(3){
-    transition-delay: 700ms;
-} */
-/* .containerMarcas :nth-child(2){
-    transition-delay: 300ms;
-}
-.containerMarcas :nth-child(3){
-    transition-delay: 700ms;
-} */
-
 .containerGrid :nth-child(2){
     transition-delay: 400ms;
 }
@@ -1001,4 +996,5 @@ header {
 }
 .containerColumn :nth-child(3){
     transition-delay: 700ms;
+}
 }

@@ -1,3 +1,44 @@
+let contagem = 1;
+document.getElementById("radio1").checked = true;
+setInterval(function () {
+    nextImage()
+}, 4000)
+
+function nextImage() {
+    contagem++;
+    if (contagem > 3) {
+        contagem = 1;
+    }
+    document.getElementById("radio" + contagem).checked = true
+}
+
+const botãoSubir = document.getElementById("botãoSubir")
+
+window.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 180) {
+            botãoSubir.style.display = "block";
+        } else {
+            botãoSubir.style.display = 'none';
+        }
+    })
+})
+
+botãoSubir.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+})
+
+
+//js remover botão
+function removerBotão() {
+    if (window.innerWidth < 1023) {
+        botãoSubir.remove()
+    }
+}
+
+
+
+
 const lastOne = document.querySelector("#clientes")
 const myObserver = new IntersectionObserver((entries)=>{
 entries.forEach((entry)=>{
