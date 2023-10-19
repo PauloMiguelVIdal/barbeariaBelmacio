@@ -500,3 +500,93 @@ marcaMary.addEventListener("mouseleave",()=>{
 //   containerPrincDir
  });
 
+
+ const navegação = document.getElementById("navegação")
+ const navegaçãoCelular = document.getElementById("navegaçãoCelular")
+ 
+ function substituirNavegação(){
+     const larguraTela = window.innerWidth;
+     if(larguraTela < 1023){
+         navegação.style.display = "none";
+         navegaçãoCelular.style.display = "flex";
+     }
+ else{
+     navegação.style.display = "flex"
+     navegaçãoCelular.style.display = "none"
+     menuCell.style.display = "none"
+ }
+ }
+ 
+ const slides = ["cabelo", "infantil", "barba"];
+
+
+
+let cabelo = document.getElementById("cabelo")
+let infantil = document.getElementById("infantil")
+let barba = document.getElementById("barba")
+
+
+const larguraTela = window.innerWidth;
+
+function selecionarTamanho() {
+    const larguraTela = window.innerWidth;
+    const tamanho = ["Maior", "Menor"]
+    if (larguraTela > 767) {
+        return tamanho[0]
+
+    } else {
+        return tamanho[1]
+    }
+}
+
+ window.addEventListener('load', () => {
+  const tamanho = selecionarTamanho()
+  atualizarImagens(tamanho);
+  removerBotão();
+  substituirNavegação();
+})
+window.addEventListener('resize', () => {
+  const tamanho = selecionarTamanho()
+  atualizarImagens(tamanho);
+  removerBotão();
+  substituirNavegação();
+})
+ 
+ 
+ 
+ const menuCell = document.getElementById("menuCell")
+ const botãoCell = document.getElementById("botãoCell")
+ botãoCell.addEventListener("click",()=>{
+     if(menuCell.style.display==="block"){
+         menuCell.style.display = "none"
+     } else{
+         menuCell.style.display = "block"
+     }
+ })
+
+ 
+function atualizarImagens(tamanho) {
+  const imagensSelecionadas = tamanho === "Maior" ? Maior : Menor;
+
+  for (const id of ["site", "pix", "entrega"]) {
+      const imagemId = id + tamanho;
+      const imagem = imagens[imagemId];
+
+      if (imagem) {
+          imagem();
+      }
+  }
+}
+
+const Maior = ["cabeloMaior", "infantilMaior", "barbaMaior"]
+
+const Menor = ["cabeloMenor", "infantilMenor", "barbaMenor"]
+
+const imagens = {
+    "cabeloMaior": () => cabelo.src = "./Slides belmacio/cabeloMaior",
+    "cabeloMenor": () => cabelo.src = "./Slides belmacio/cabeloMenor",
+    "infantilMaior": () => infantil.src = "./Slides belmacio/infantilMaior",
+    "infantilMenor": () => infantil.src = "./Slides belmacio/infantilMaior",
+    "barbaMaior": () => barba.src = "./Slides belmacio/barbaMaior",
+    "barbaMenor": () => barba.src = "./Slides belmacio/barbaMenor"
+}
