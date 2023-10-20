@@ -1249,7 +1249,7 @@ header {
     .descriçãoClientes {
         color: #fff;
         text-align: center;
-        font-size: 18px;
+        font-size: 40px;
     }
     
 
@@ -1456,7 +1456,7 @@ header {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        height: 100vh;
+        height: max-content;
         align-items: center;
         /* background:linear-gradient(to bottom,#0A0E34,#ffffff ); */
         background: linear-gradient(#0a0e2e, #ffffff)
@@ -1478,7 +1478,7 @@ header {
     
     .titulo3 {
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
         color: #894E0C;
         margin-top: 40px;
         padding: 0;
@@ -1486,7 +1486,7 @@ header {
     
     .titulo4 {
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
         color: white;
         margin: 20px 0px 20px 0px;    }
     
@@ -1558,6 +1558,7 @@ header {
         align-self: center;
         box-shadow: 3px 19px 25px 17px rgba(0, 0, 0, 0.39);
         padding: 20px;
+        margin: 50px 0px 50px 0px;
     }
     
     .botãoAgendarAgora {
@@ -1595,15 +1596,16 @@ header {
         height: 70%;
         background-color: transparent;
         border-radius: 12px;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        flex-direction: column;
     }
     
     .circuloServiço {
         border-radius: 100%;
         background-color: #F28705;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1624,24 +1626,27 @@ header {
         height: 50vh;
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
+        flex-direction: column;
     }
     
     .descriçãoServiços {
         text-align: center;
+        font-size: 40px;
+        padding-left: 40px;
     }
     
     .iconServiços {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
     }
     
     .serviços {
         display: flex;
-        justify-content: center;
+        justify-content:unsafe;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         height: 100%;
+        padding: 0 0 0 120px;
     }
     
     .containerEndereço {
@@ -1659,7 +1664,7 @@ header {
     }
     
     .containerV {
-        width: 30%;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -1668,7 +1673,7 @@ header {
         border-radius: 60px;
         background: linear-gradient(180deg, #F28705 0%, #894E0C 100%);
         padding: 20px;
-        margin: 0px 10px 0px 10px;
+        margin: 20px 10px 30px 10px;
     }
     
     .containerV:hover {
@@ -1696,6 +1701,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
     }
     
     .containerMarcas:hover {
@@ -1707,8 +1713,8 @@ header {
     }
     
     .marcas {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border-radius: 60px;
         background-color: #F28705;
         display: flex;
@@ -1718,14 +1724,14 @@ header {
         flex-direction: column;
         padding: 10px;
         color: #ffffff;
-        margin: 10px;
+        margin: 20px;
     }
     
     .marcas:hover {
         box-shadow: 0px 10px 23px -3px rgba(137, 78, 12, 1);
         background: linear-gradient(to bottom, #F28705, #c7863d);
-        width: 300px;
-        height: 400px;
+        width: 500px;
+        height: 800px;
         transition: 0.4s;
         text-align: center;
         display: flex;
@@ -1759,21 +1765,28 @@ header {
     }
     
     .logoMarca {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
     
     .descNatura {
         display: none;
+        font-size: 30px;
+        margin: 30px 50px 50px 50px;
     }
     
     .descGrandha {
         display: none;
-    
+        font-size: 30px;
+        margin: 30px 50px 50px 50px;
+
     }
     
     .descMary {
         display: none;
+        font-size: 30px;
+        margin: 30px 50px 50px 50px;
+
     }
     
     /* teste container grid */
@@ -1968,7 +1981,7 @@ header {
     }
     
     .container1 :nth-child(3){
-        transition-delay: 700ms;
+        transition-delay: 300ms;
     }
     
     .containerGrid :nth-child(2){
@@ -2235,7 +2248,7 @@ header {
     .descriçãoClientes {
         color: #fff;
         text-align: center;
-        font-size: 18px;
+        font-size: 40px;
     }
     
 
@@ -2442,7 +2455,7 @@ header {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        height: 100vh;
+        height: max-content;
         align-items: center;
         /* background:linear-gradient(to bottom,#0A0E34,#ffffff ); */
         background: linear-gradient(#0a0e2e, #ffffff)
@@ -2464,7 +2477,7 @@ header {
     
     .titulo3 {
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
         color: #894E0C;
         margin-top: 40px;
         padding: 0;
@@ -2472,7 +2485,7 @@ header {
     
     .titulo4 {
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
         color: white;
         margin: 20px 0px 20px 0px;    }
     
@@ -2544,6 +2557,7 @@ header {
         align-self: center;
         box-shadow: 3px 19px 25px 17px rgba(0, 0, 0, 0.39);
         padding: 20px;
+        margin: 50px 0px 50px 0px;
     }
     
     .botãoAgendarAgora {
@@ -2581,15 +2595,16 @@ header {
         height: 70%;
         background-color: transparent;
         border-radius: 12px;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        flex-direction: column;
     }
     
     .circuloServiço {
         border-radius: 100%;
         background-color: #F28705;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2610,24 +2625,27 @@ header {
         height: 50vh;
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
+        flex-direction: column;
     }
     
     .descriçãoServiços {
         text-align: center;
+        font-size: 40px;
+        padding-left: 40px;
     }
     
     .iconServiços {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
     }
     
     .serviços {
         display: flex;
-        justify-content: center;
+        justify-content:unsafe;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         height: 100%;
+        padding: 0 0 0 120px;
     }
     
     .containerEndereço {
@@ -2645,7 +2663,7 @@ header {
     }
     
     .containerV {
-        width: 30%;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -2654,7 +2672,7 @@ header {
         border-radius: 60px;
         background: linear-gradient(180deg, #F28705 0%, #894E0C 100%);
         padding: 20px;
-        margin: 0px 10px 0px 10px;
+        margin: 20px 10px 30px 10px;
     }
     
     .containerV:hover {
@@ -2682,6 +2700,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
     }
     
     .containerMarcas:hover {
@@ -2693,8 +2712,8 @@ header {
     }
     
     .marcas {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border-radius: 60px;
         background-color: #F28705;
         display: flex;
@@ -2704,14 +2723,14 @@ header {
         flex-direction: column;
         padding: 10px;
         color: #ffffff;
-        margin: 10px;
+        margin: 20px;
     }
     
     .marcas:hover {
         box-shadow: 0px 10px 23px -3px rgba(137, 78, 12, 1);
         background: linear-gradient(to bottom, #F28705, #c7863d);
-        width: 300px;
-        height: 400px;
+        width: 500px;
+        height: 800px;
         transition: 0.4s;
         text-align: center;
         display: flex;
@@ -2745,21 +2764,28 @@ header {
     }
     
     .logoMarca {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
     
     .descNatura {
         display: none;
+        font-size: 30px;
+        margin: 30px 50px 50px 50px;
     }
     
     .descGrandha {
         display: none;
-    
+        font-size: 30px;
+        margin: 30px 50px 50px 50px;
+
     }
     
     .descMary {
         display: none;
+        font-size: 30px;
+        margin: 30px 50px 50px 50px;
+
     }
     
     /* teste container grid */
@@ -2954,7 +2980,7 @@ header {
     }
     
     .container1 :nth-child(3){
-        transition-delay: 700ms;
+        transition-delay: 300ms;
     }
     
     .containerGrid :nth-child(2){
@@ -2969,5 +2995,4 @@ header {
     .containerColumn :nth-child(3){
         transition-delay: 700ms;
     }
-
 }
