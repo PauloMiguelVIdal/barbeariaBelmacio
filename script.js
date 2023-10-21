@@ -38,7 +38,6 @@ function removerBotão() {
 
 
 
-
 const lastOne = document.querySelector("#clientes")
 const myObserver = new IntersectionObserver((entries)=>{
 entries.forEach((entry)=>{
@@ -72,111 +71,216 @@ const assinaturaBarba = document.getElementById("assinaturaBarba")
 const assinaturaCabeloBarba = document.getElementById("assinaturaCabeloBarba")
 
 //cabelo
-
-cabeloAssinaturaBarba.addEventListener("click",()=>{
-if(cabeloAssinaturaBarba.classList.contains("containerGridSec1")){
-assinaturaCabelo.style.display="flex" 
-assinaturaBarba.style.display="none" 
-assinaturaCabeloBarba.style.display="none" 
-
-}else if(cabeloAssinaturaBarba.classList.contains("containerGridSec2")){
+if(window.innerWidth > 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
+  if(cabeloAssinaturaBarba.classList.contains("containerGridSec1")){
   assinaturaCabelo.style.display="flex" 
   assinaturaBarba.style.display="none" 
   assinaturaCabeloBarba.style.display="none" 
   
-}else{
- 
-}
-})
-
-cabeloAssinaturaCabeloBarba.addEventListener("click",()=>{
-if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec1")){
-assinaturaCabelo.style.display="flex" 
-assinaturaBarba.style.display="none" 
-assinaturaCabeloBarba.style.display="none" 
-}else if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
+  }else if(cabeloAssinaturaBarba.classList.contains("containerGridSec2")){
+    assinaturaCabelo.style.display="flex" 
+    assinaturaBarba.style.display="none" 
+    assinaturaCabeloBarba.style.display="none" 
+    
+  }else{
+   
+  }
+  })
+  
+  cabeloAssinaturaCabeloBarba.addEventListener("click",()=>{
+  if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec1")){
   assinaturaCabelo.style.display="flex" 
   assinaturaBarba.style.display="none" 
   assinaturaCabeloBarba.style.display="none" 
-}else{
-
-}
-})
-//
-
-
-//barba
-barbaAssinaturaCabelo.addEventListener("click",()=>{
-  if(barbaAssinaturaCabelo.classList.contains("containerGridSec1")){
-  assinaturaCabelo.style.display="none" 
-  assinaturaBarba.style.display="flex" 
-  assinaturaCabeloBarba.style.display="none" 
-
-  }else if(barbaAssinaturaCabelo.classList.contains("containerGridSec2")){
+  }else if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
+    assinaturaCabelo.style.display="flex" 
+    assinaturaBarba.style.display="none" 
+    assinaturaCabeloBarba.style.display="none" 
+  }else{
+  
+  }
+  })
+  //
+  
+  
+  //barba
+  barbaAssinaturaCabelo.addEventListener("click",()=>{
+    if(barbaAssinaturaCabelo.classList.contains("containerGridSec1")){
     assinaturaCabelo.style.display="none" 
     assinaturaBarba.style.display="flex" 
     assinaturaCabeloBarba.style.display="none" 
-
-  }else{
-
-  }
-  })
   
-  barbaAssinaturaCabeloBarba.addEventListener("click",()=>{
-  if(barbaAssinaturaCabeloBarba.classList.contains("containerGridSec1")){
-  assinaturaCabelo.style.display="none" 
-  assinaturaBarba.style.display="flex" 
-  assinaturaCabeloBarba.style.display="none" 
+    }else if(barbaAssinaturaCabelo.classList.contains("containerGridSec2")){
+      assinaturaCabelo.style.display="none" 
+      assinaturaBarba.style.display="flex" 
+      assinaturaCabeloBarba.style.display="none" 
   
-  }else if(barbaAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
+    }else{
+  
+    }
+    })
+    
+    barbaAssinaturaCabeloBarba.addEventListener("click",()=>{
+    if(barbaAssinaturaCabeloBarba.classList.contains("containerGridSec1")){
     assinaturaCabelo.style.display="none" 
     assinaturaBarba.style.display="flex" 
     assinaturaCabeloBarba.style.display="none" 
-
-  }else{
-
-  }
-  })
-
-//
-
-// cabelo b
-cabeloBAssinaturaCabelo.addEventListener("click",()=>{
-  if(cabeloBAssinaturaCabelo.classList.contains("containerGridSec1")){
-  assinaturaCabelo.style.display="none" 
-  assinaturaBarba.style.display="none" 
-  assinaturaCabeloBarba.style.display="flex" 
-
-  }else if(cabeloBAssinaturaCabelo.classList.contains("containerGridSec2")){
-    assinaturaCabelo.style.display="none" 
-    assinaturaBarba.style.display="none" 
-    assinaturaCabeloBarba.style.display="flex" 
-
-  }else{
-
-  }
-  })
+    
+    }else if(barbaAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
+      assinaturaCabelo.style.display="none" 
+      assinaturaBarba.style.display="flex" 
+      assinaturaCabeloBarba.style.display="none" 
   
-  cabeloBAssinaturaBarba.addEventListener("click",()=>{
-  if(cabeloBAssinaturaBarba.classList.contains("containerGridSec1")){
-  assinaturaCabelo.style.display="none" 
-  assinaturaBarba.style.display="none" 
-  assinaturaCabeloBarba.style.display="flex" 
-
-  }else if(cabeloBAssinaturaBarba.classList.contains("containerGridSec2")){
+    }else{
+  
+    }
+    })
+  
+  //
+  
+  // cabelo b
+  cabeloBAssinaturaCabelo.addEventListener("click",()=>{
+    if(cabeloBAssinaturaCabelo.classList.contains("containerGridSec1")){
     assinaturaCabelo.style.display="none" 
     assinaturaBarba.style.display="none" 
     assinaturaCabeloBarba.style.display="flex" 
-
-  }else{
-
+  
+    }else if(cabeloBAssinaturaCabelo.classList.contains("containerGridSec2")){
+      assinaturaCabelo.style.display="none" 
+      assinaturaBarba.style.display="none" 
+      assinaturaCabeloBarba.style.display="flex" 
+  
+    }else{
+  
+    }
+    })
+    
+    cabeloBAssinaturaBarba.addEventListener("click",()=>{
+    if(cabeloBAssinaturaBarba.classList.contains("containerGridSec1")){
+    assinaturaCabelo.style.display="none" 
+    assinaturaBarba.style.display="none" 
+    assinaturaCabeloBarba.style.display="flex" 
+  
+    }else if(cabeloBAssinaturaBarba.classList.contains("containerGridSec2")){
+      assinaturaCabelo.style.display="none" 
+      assinaturaBarba.style.display="none" 
+      assinaturaCabeloBarba.style.display="flex" 
+  
+    }else{
+  
+    }
+   })
   }
-  })
+
+
+
+  
+  if(window.innerWidth < 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
+    if(cabeloAssinaturaBarba.classList.contains("containerGridSec1")){
+    assinaturaCabelo.style.display="flex" 
+    assinaturaBarba.style.display="none" 
+    assinaturaCabeloBarba.style.display="none" 
+    
+    }else if(cabeloAssinaturaBarba.classList.contains("containerGridSec2")){
+      assinaturaCabelo.style.display="flex" 
+      assinaturaBarba.style.display="none" 
+      assinaturaCabeloBarba.style.display="none" 
+      
+    }else{
+     
+    }
+    })
+    
+    cabeloAssinaturaCabeloBarba.addEventListener("click",()=>{
+    if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec1")){
+    assinaturaCabelo.style.display="flex" 
+    assinaturaBarba.style.display="none" 
+    assinaturaCabeloBarba.style.display="none" 
+    }else if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
+      assinaturaCabelo.style.display="flex" 
+      assinaturaBarba.style.display="none" 
+      assinaturaCabeloBarba.style.display="none" 
+    }else{
+    
+    }
+    })
+    //
+    
+    
+    //barba
+    barbaAssinaturaCabelo.addEventListener("click",()=>{
+      if(barbaAssinaturaCabelo.classList.contains("containerGridSec1")){
+      assinaturaCabelo.style.display="none" 
+      assinaturaBarba.style.display="flex" 
+      assinaturaCabeloBarba.style.display="none" 
+    
+      }else if(barbaAssinaturaCabelo.classList.contains("containerGridSec2")){
+        assinaturaCabelo.style.display="none" 
+        assinaturaBarba.style.display="flex" 
+        assinaturaCabeloBarba.style.display="none" 
+    
+      }else{
+    
+      }
+      })
+      
+      barbaAssinaturaCabeloBarba.addEventListener("click",()=>{
+      if(barbaAssinaturaCabeloBarba.classList.contains("containerGridSec1")){
+      assinaturaCabelo.style.display="none" 
+      assinaturaBarba.style.display="flex" 
+      assinaturaCabeloBarba.style.display="none" 
+      
+      }else if(barbaAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
+        assinaturaCabelo.style.display="none" 
+        assinaturaBarba.style.display="flex" 
+        assinaturaCabeloBarba.style.display="none" 
+    
+      }else{
+    
+      }
+      })
+    
+    //
+    
+    // cabelo b
+    cabeloBAssinaturaCabelo.addEventListener("click",()=>{
+      if(cabeloBAssinaturaCabelo.classList.contains("containerGridSec1")){
+      assinaturaCabelo.style.display="none" 
+      assinaturaBarba.style.display="none" 
+      assinaturaCabeloBarba.style.display="flex" 
+    
+      }else if(cabeloBAssinaturaCabelo.classList.contains("containerGridSec2")){
+        assinaturaCabelo.style.display="none" 
+        assinaturaBarba.style.display="none" 
+        assinaturaCabeloBarba.style.display="flex" 
+    
+      }else{
+    
+      }
+      })
+      
+      cabeloBAssinaturaBarba.addEventListener("click",()=>{
+      if(cabeloBAssinaturaBarba.classList.contains("containerGridSec1")){
+      assinaturaCabelo.style.display="none" 
+      assinaturaBarba.style.display="none" 
+      assinaturaCabeloBarba.style.display="flex" 
+    
+      }else if(cabeloBAssinaturaBarba.classList.contains("containerGridSec2")){
+        assinaturaCabelo.style.display="none" 
+        assinaturaBarba.style.display="none" 
+        assinaturaCabeloBarba.style.display="flex" 
+    
+      }else{
+    
+      }
+     })
+    }
+  
+
+
 
 
 //
-
-
 
 
 
@@ -528,6 +632,7 @@ let barba = document.getElementById("barba")
 
 const larguraTela = window.innerWidth;
 
+
 function selecionarTamanho() {
     const larguraTela = window.innerWidth;
     const tamanho = ["Maior", "Menor"]
@@ -564,11 +669,18 @@ window.addEventListener('resize', () => {
      }
  })
 
+
+window.addEventListener("scroll",()=>{
+  menuCell.style.display = "none"
+})
+  
+
+
+
  
 function atualizarImagens(tamanho) {
   const imagensSelecionadas = tamanho === "Maior" ? Maior : Menor;
-
-  for (const id of ["site", "pix", "entrega"]) {
+  for (const id of ["cabelo", "infantil", "barba"]) {
       const imagemId = id + tamanho;
       const imagem = imagens[imagemId];
 
@@ -583,10 +695,10 @@ const Maior = ["cabeloMaior", "infantilMaior", "barbaMaior"]
 const Menor = ["cabeloMenor", "infantilMenor", "barbaMenor"]
 
 const imagens = {
-    "cabeloMaior": () => cabelo.src = "./Slides belmacio/cabeloMaior",
-    "cabeloMenor": () => cabelo.src = "./Slides belmacio/cabeloMenor",
-    "infantilMaior": () => infantil.src = "./Slides belmacio/infantilMaior",
-    "infantilMenor": () => infantil.src = "./Slides belmacio/infantilMaior",
-    "barbaMaior": () => barba.src = "./Slides belmacio/barbaMaior",
-    "barbaMenor": () => barba.src = "./Slides belmacio/barbaMenor"
+    "cabeloMaior": () => cabelo.src = "./Slides/cabeloMaior.png",
+    "cabeloMenor": () => cabelo.src = "./Slides/cabeloMenor.png",
+    "infantilMaior": () => infantil.src = "./Slides/infantilMaior.png",
+    "infantilMenor": () => infantil.src = "./Slides/infantilMenor.png",
+    "barbaMaior": () => barba.src = "./Slides/barbaMaior.png",
+    "barbaMenor": () => barba.src = "./Slides/barbaMenor.png"
 }
