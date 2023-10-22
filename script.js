@@ -174,17 +174,19 @@ if(window.innerWidth > 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
 
 
 
-  
+
   if(window.innerWidth < 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
     if(cabeloAssinaturaBarba.classList.contains("containerGridSec1")){
     assinaturaCabelo.style.display="flex" 
     assinaturaBarba.style.display="none" 
     assinaturaCabeloBarba.style.display="none" 
+    assinaturaCabelo.scrollIntoView({ behavior: 'smooth' })
     
     }else if(cabeloAssinaturaBarba.classList.contains("containerGridSec2")){
       assinaturaCabelo.style.display="flex" 
       assinaturaBarba.style.display="none" 
       assinaturaCabeloBarba.style.display="none" 
+      assinaturaCabelo.scrollIntoView({ behavior: 'smooth' })
       
     }else{
      
@@ -196,10 +198,12 @@ if(window.innerWidth > 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
     assinaturaCabelo.style.display="flex" 
     assinaturaBarba.style.display="none" 
     assinaturaCabeloBarba.style.display="none" 
+    assinaturaCabelo.scrollIntoView({ behavior: 'smooth' })
     }else if(cabeloAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
       assinaturaCabelo.style.display="flex" 
       assinaturaBarba.style.display="none" 
       assinaturaCabeloBarba.style.display="none" 
+      assinaturaCabelo.scrollIntoView({ behavior: 'smooth' })
     }else{
     
     }
@@ -213,11 +217,14 @@ if(window.innerWidth > 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
       assinaturaCabelo.style.display="none" 
       assinaturaBarba.style.display="flex" 
       assinaturaCabeloBarba.style.display="none" 
+      assinaturaBarba.scrollIntoView({ behavior: 'smooth' })
+
     
       }else if(barbaAssinaturaCabelo.classList.contains("containerGridSec2")){
         assinaturaCabelo.style.display="none" 
         assinaturaBarba.style.display="flex" 
         assinaturaCabeloBarba.style.display="none" 
+        assinaturaBarba.scrollIntoView({ behavior: 'smooth' })
     
       }else{
     
@@ -229,11 +236,13 @@ if(window.innerWidth > 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
       assinaturaCabelo.style.display="none" 
       assinaturaBarba.style.display="flex" 
       assinaturaCabeloBarba.style.display="none" 
+      assinaturaBarba.scrollIntoView({ behavior: 'smooth' })
       
       }else if(barbaAssinaturaCabeloBarba.classList.contains("containerGridSec2")){
         assinaturaCabelo.style.display="none" 
         assinaturaBarba.style.display="flex" 
         assinaturaCabeloBarba.style.display="none" 
+        assinaturaBarba.scrollIntoView({ behavior: 'smooth' })
     
       }else{
     
@@ -248,11 +257,13 @@ if(window.innerWidth > 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
       assinaturaCabelo.style.display="none" 
       assinaturaBarba.style.display="none" 
       assinaturaCabeloBarba.style.display="flex" 
-    
+      assinaturaCabeloBarba.scrollIntoView({ behavior: 'smooth' })
+
       }else if(cabeloBAssinaturaCabelo.classList.contains("containerGridSec2")){
         assinaturaCabelo.style.display="none" 
         assinaturaBarba.style.display="none" 
         assinaturaCabeloBarba.style.display="flex" 
+        assinaturaCabeloBarba.scrollIntoView({ behavior: 'smooth' })
     
       }else{
     
@@ -264,12 +275,13 @@ if(window.innerWidth > 769){cabeloAssinaturaBarba.addEventListener("click",()=>{
       assinaturaCabelo.style.display="none" 
       assinaturaBarba.style.display="none" 
       assinaturaCabeloBarba.style.display="flex" 
+      assinaturaCabeloBarba.scrollIntoView({ behavior: 'smooth' })
     
       }else if(cabeloBAssinaturaBarba.classList.contains("containerGridSec2")){
         assinaturaCabelo.style.display="none" 
         assinaturaBarba.style.display="none" 
         assinaturaCabeloBarba.style.display="flex" 
-    
+        assinaturaCabeloBarba.scrollIntoView({ behavior: 'smooth' })
       }else{
     
       }
