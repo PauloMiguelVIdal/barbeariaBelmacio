@@ -1,3 +1,4 @@
+//código do slide show
 document.addEventListener("DOMContentLoaded", () => {
 let contagem = 1;
 document.getElementById("radio1").checked = true;
@@ -13,6 +14,7 @@ function nextImage() {
     document.getElementById("radio" + contagem).checked = true
 }
 
+// script do botão para subir para o topo
 const botãoSubir = document.getElementById("botãoSubir")
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -30,16 +32,14 @@ botãoSubir.addEventListener("click", () => {
 })
 
 
-//js remover botão
+//script para o botão ser removido caso a tela tenha menos de 1023 px de largura
 function removerBotão() {
     if (window.innerWidth < 1023) {
         botãoSubir.remove()
     }
 }
 
-
-
-const lastOne = document.querySelector("#clientes")
+//script para que adicione o efeito de aparecer os conteúdos
 const myObserver = new IntersectionObserver((entries)=>{
 entries.forEach((entry)=>{
   if(entry.isIntersecting){
